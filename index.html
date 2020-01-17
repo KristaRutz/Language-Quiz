@@ -10,13 +10,14 @@
   <body>
     <div class="container">
 
-      <div class="heading">
+      <div class="heading jumbotron">
         <h1>Which programming language should you learn?</h1>
         <p class="lead"><em>Insert a description of this quiz game here.</em> Make it somewhat funny, relatable, and self-depracating, in the manner that Buzzfeed perfected. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. </p>
         <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
       </div>
 
       <div class="form-panel">
+        <a name="jumpToQuizStart"></a>
         <h2>Take the quiz</h2>
         <p class="lead">Here are some obvious directions for how to take an online quiz. Be sure to fill out <strong>all</strong> of the questions!</p>
         <div class="form">
@@ -25,115 +26,129 @@
             <div class="form-group">
               <label for="username" class="col-sm-2 control-label">Your name</label>
               <div class="col-sm-10">
-                <input type="text" class="form-control" id="username" placeholder="Name">
+                <input type="text" class="form-control" id="username" placeholder="Name (is optional)">
               </div>
             </div>
 
-            <div class="form-group">
+            <div id="hogwarts" class="form-group">
               <label for="hogwarts" class="col-sm-2 control-label">What is your Hogwarts house?</label>
-              <div id="hogwarts" class="col-sm-10">
+              <div class="col-sm-10">
                 <div class="radio">
                   <label>
-                    <input type="radio" name="hogwarts" id="hogwarts1" value="0"> Hufflepuff
+                    <input type="radio" name="hogwarts" id="hogwarts1" value="python"> Hufflepuff
                   </label>
                 </div>
                 <div class="radio">
                   <label>
-                    <input type="radio" name="hogwarts" id="hogwarts2" value="1"> Slytherin
+                    <input type="radio" name="hogwarts" id="hogwarts2" value="ruby"> Slytherin
                   </label>
                 </div>
                 <div class="radio">
                   <label>
-                    <input type="radio" name="hogwarts" id="hogwarts3" value="2"> Gryffindor
+                    <input type="radio" name="hogwarts" id="hogwarts3" value="javascript"> Gryffindor
                   </label>
                 </div>
                 <div class="radio">
                   <label>
-                    <input type="radio" name="hogwarts" id="hogwarts4" value="3"> Ravenclaw
+                    <input type="radio" name="hogwarts" id="hogwarts4" value="java"> Ravenclaw
                   </label>
                 </div>
               </div>
             </div>
 
-            <div class="form-group">
+            <div id="giphy" class="form-group">
               <label for="giphy" class="col-sm-2 control-label">Select the GIF that feels like "You"</label>
-              <div id="giphy" class="col-sm-10">
+              <div class="col-sm-10">
                 <div class="radio">
                   <label>
-                    <input type="radio" name="giphy" id="giphy1" value="0">
+                    <input type="radio" name="giphy" id="giphy1" value="python">
                     <iframe src="https://giphy.com/embed/5WfO4wWrBraNDPNXOJ" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/wetv-we-tv-love-after-lockup-loveafterlockup-5WfO4wWrBraNDPNXOJ">via GIPHY</a></p>
                   </label>
                 </div>
                 <div class="radio">
                   <label>
-                    <input type="radio" name="giphy" id="giphy2" value="1">
+                    <input type="radio" name="giphy" id="giphy2" value="java">
                     <iframe src="https://giphy.com/embed/iB4PoTVka0Xnul7UaC" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/high-quality-highqualitygifs-iB4PoTVka0Xnul7UaC">via GIPHY</a></p>
                   </label>
                 </div>
                 <div class="radio">
                   <label>
-                    <input type="radio" name="giphy" id="giphy3" value="2">
+                    <input type="radio" name="giphy" id="giphy3" value="ruby">
                     <iframe src="https://giphy.com/embed/qoiq1ia7Bl32M" width="480" height="301" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/parks-and-recreation-internet-college-qoiq1ia7Bl32M">via GIPHY</a></p>
                   </label>
                 </div>
                 <div class="radio">
                   <label>
-                    <input type="radio" name="giphy" id="giphy4" value="3">
+                    <input type="radio" name="giphy" id="giphy4" value="javascript">
                     <iframe src="https://giphy.com/embed/bMdZu3fG2ZEBO" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/abcnetwork-angry-upset-bMdZu3fG2ZEBO">via GIPHY</a></p>
                   </label>
                 </div>
               </div>
             </div>
 
-           
-
-            <div class="form-group">
+            <div id="codingGoals" class="form-group">
               <label for="codingGoals" class="col-sm-2 control-label">Which of these statements describes your coding goals?</label>
-              <div id="codingGoals" class="col-sm-10">
+              <div class="col-sm-10">
                 <div class="radio">
                   <label>
-                    <input type="radio" name="codingGoals" id="codingGoals1" value="0"> "I'd like to work for a large company, such as Microsoft"
+                    <input type="radio" name="codingGoals" id="codingGoals1" value="java"> "I'd like to work for a large company, such as Microsoft"
                   </label>
                 </div>
                 <div class="radio">
                   <label>
-                    <input type="radio" name="codingGoals" id="codingGoals2" value="1"> "I mainly want to create interactive websites"
+                    <input type="radio" name="codingGoals" id="codingGoals2" value="javascript"> "I mainly want to create interactive websites"
                   </label>
                 </div>
                 <div class="radio">
                   <label>
-                    <input type="radio" name="codingGoals" id="codingGoals3" value="2"> "I want to code in a simple language without a lot of weird symbols"
+                    <input type="radio" name="codingGoals" id="codingGoals3" value="python"> "I want to code in a simple language without a lot of weird symbols"
                   </label>
                 </div>
                 <div class="radio">
                   <label>
-                    <input type="radio" name="codingGoals" id="codingGoals4" value="3"> "I just want to be myself while I write code"
+                    <input type="radio" name="codingGoals" id="codingGoals4" value="ruby"> "I just want to be myself while I write code"
                   </label>
                 </div>
               </div>
             </div>
 
-            <div class="form-group">
-              <label for="personality" class="col-sm-2 control-label">You're more of a...</label>
-              <div id="personality" class="col-sm-10">
+            <div id="personality" class="form-group">
+              <label for="personality" class="col-sm-2 control-label">You're more interested in...</label>
+              <div class="col-sm-10">
                 <div class="radio">
                   <label>
-                    <input type="radio" name="personality" id="personality1" value="0"> Free spirit
+                    <input type="radio" name="personality" id="personality1" value="0">Having lots of flexibility, even if it means slowing things down
                   </label>
                 </div>
                 <div class="radio">
                   <label>
-                    <input type="radio" name="personality" id="personality2" value="1"><s>Nerd</s> Academic
+                    <input type="radio" name="personality" id="personality2" value="1">Not making mistakes, even if it means more rules
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div id="tvShow" class="form-group">
+              <label for="tvShow" class="col-sm-2 control-label">You'd be happiest living in which sitcom?</label>
+              <div class="col-sm-10">
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="tvShow" id="tvShow1" value="python">Parks and Recreation
                   </label>
                 </div>
                 <div class="radio">
                   <label>
-                    <input type="radio" name="personality" id="personality3" value="2"> Tech bro
+                    <input type="radio" name="tvShow" id="tvShow2" value="java">The Office
                   </label>
                 </div>
                 <div class="radio">
                   <label>
-                    <input type="radio" name="personality" id="personality4" value="3"> Laid-back, go-with-the-flow type of person
+                    <input type="radio" name="tvShow" id="tvShow1" value="ruby">Brooklyn 99
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="tvShow" id="tvShow2" value="javascript">Arrested Development
                   </label>
                 </div>
               </div>
@@ -151,12 +166,10 @@
 
       <div id="output" class="panel panel-default">
         <div class="panel-heading">
+          <a name="jumpToResults"></a>
           <h2 class="panel-title">Your Results:</h2>
         </div>
-        <div class="panel-body">
-          <p id="resultTitle" class="lead"></p>
-          <p id="notSubmitted">We don't know, until you submit your quiz</p>
-          <p id="resultMessage">Test.</p>
+        <div id="results" class="panel-body">
         </div>
       </div>
 
@@ -164,6 +177,7 @@
         <button class="btn btn-warning">Learn more about choosing a programming language</button>
       </a>
       <br>
+      <a href="#jumpToQuizStart">Back to Start</a>
 
     </div>
   </body>
