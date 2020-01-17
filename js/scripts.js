@@ -1,3 +1,20 @@
+var rubyCount = 0;
+var pythonCount = 0;
+var javaCount = 0;
+var javaScriptCount = 0;
+
+function increasePoints(counter, increase){
+  if (counter==="java") {
+    javaCount = javaCount + increase;
+  } else if (counter==="ruby") {
+    rubyCount = rubyCount + increase;
+  } else if (counter==="python") {
+    pythonCount = pythonCount + increase;
+  } else {
+    pythonCount = pythonCount + increase;
+  } 
+}
+
 $(document).ready(function(){
   $("form").submit(function(event) {
     
@@ -32,7 +49,25 @@ $(document).ready(function(){
 
     if (hogwarts && codingGoals && giphy && personality && tvShow) {
 
-      highScore = hogwarts;
+      rubyCount = 0;
+      pythonCount = 0;
+      javaCount = 0;
+      javaScriptCount = 0;
+
+      increasePoints(hogwarts, 1);
+      increasePoints(codingGoals, 3);
+      increasePoints(giphy, 1);
+      increasePoints(tvShow, 1);
+
+      if (personality === "0") {
+        increasePoints("java", -2);
+      } else {
+        increasePoints("java", 2);
+      }
+
+     if (javaScriptCount >= (rubyCount && javaCount && javaScriptCount))
+
+      console.log(rubyCount, pythonCount, javaCount, javaScriptCount);
 
       $("#results").prepend(`<p id="resultTitle" class="lead">${highScore}</p>`);
       $("#results").append(`<p id="resultMessage">Okay, ${username}, here's what our highly scientific quiz found. You scored the highest for ${highScore}, which means that ${highScore} is probably the language that is best suited for your learning goals!</p>`);
@@ -42,32 +77,27 @@ $(document).ready(function(){
 
     } else {
       window.location = "#jumpToQuizStart";
-
       // test each form field for input
       if (hogwarts) {
         $("#hogwarts").addClass("has-success");
       } else {
         $("#hogwarts").addClass("has-error");
       }
-
       if (giphy) {
         $("#giphy").addClass("has-success");
       } else {
         $("#giphy").addClass("has-error");
       }
-
       if (codingGoals) {
         $("#codingGoals").addClass("has-success");
       } else {
         $("#codingGoals").addClass("has-error");
       }
-
       if (personality) {
         $("#personality").addClass("has-success");
       } else {
         $("#personality").addClass("has-error");
       }
-
       if (tvShow) {
         $("#tvShow").addClass("has-success");
       } else {
@@ -77,5 +107,5 @@ $(document).ready(function(){
     }
 
     
-  })
+  });
 });
