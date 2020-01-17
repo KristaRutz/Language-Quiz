@@ -3,6 +3,8 @@ $(document).ready(function(){
     
     event.preventDefault();
 
+    $("#resultTitle").remove();
+    $("#resultMessage").remove();
     $("#hogwarts").removeClass("has-error");
     $("#codingGoals").removeClass("has-error");
     $("#giphy").removeClass("has-error");
@@ -29,6 +31,11 @@ $(document).ready(function(){
     }
 
     if (hogwarts && codingGoals && giphy && personality && tvShow) {
+
+      highScore = hogwarts;
+
+      $("#results").prepend(`<p id="resultTitle" class="lead">${highScore}</p>`);
+      $("#results").append(`<p id="resultMessage">Okay, ${username}, here's what our highly scientific quiz found. You scored the highest for ${highScore}, which means that ${highScore} is probably the language that is best suited for your learning goals!</p>`);
 
       window.location = "#jumpToResults";
       $("#output").show();
