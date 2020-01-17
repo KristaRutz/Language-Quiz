@@ -53,6 +53,7 @@ $(document).ready(function(){
       pythonCount = 0;
       javaCount = 0;
       javaScriptCount = 0;
+      var highScore;
 
       increasePoints(hogwarts, 1);
       increasePoints(codingGoals, 3);
@@ -65,9 +66,15 @@ $(document).ready(function(){
         increasePoints("java", 2);
       }
 
-     if (javaScriptCount >= (rubyCount && javaCount && javaScriptCount))
-
-      console.log(rubyCount, pythonCount, javaCount, javaScriptCount);
+     if (Math.max(javaScriptCount, javaCount, rubyCount, pythonCount) === javaScriptCount){
+       highScore = "JavaScript";
+      } else if (Math.max(javaScriptCount, javaCount, rubyCount, pythonCount) === pythonCount){
+       highScore = "Python";
+      } else if (Math.max(javaScriptCount, javaCount, rubyCount, pythonCount) === javaCount){
+      highScore = "Java";
+      } else {
+      highScore = "Ruby";
+      }
 
       $("#results").prepend(`<p id="resultTitle" class="lead">${highScore}</p>`);
       $("#results").append(`<p id="resultMessage">Okay, ${username}, here's what our highly scientific quiz found. You scored the highest for ${highScore}, which means that ${highScore} is probably the language that is best suited for your learning goals!</p>`);
