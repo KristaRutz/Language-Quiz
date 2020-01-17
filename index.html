@@ -16,18 +16,37 @@
         <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
       </div>
 
-      <div class="form">
+      <div class="form-panel">
 
         <h2>Take the quiz</h2>
         <p class="lead">Here are some obvious directions for how to take an online quiz. Be sure to fill out <strong>all</strong> of the questions!</p>
         
-        <div class="">
+        <div class="form">
           <form id="quiz" class="form-horizontal">
+
             <div class="form-group">
-              <label for="exampleInput">Example Label</label>
-              <input type="text" id="exampleInput">
+              <label for="exampleInput" class="col-sm-2 control-label">Example Label</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="exampleInput" placeholder="Name">
+              </div>
             </div>
-            <button type="submit" class="btn btn-danger">Get sorted.</button>
+
+            <div class="form-group">
+              <div class="col-sm-offset-2 col-sm-10">
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox"> Remember me
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="col-sm-offset-2 col-sm-10">
+                <button type="submit" class="btn btn-danger">Get sorted.</button>
+              </div>
+            </div>
+
           </form>
         </div>
 
