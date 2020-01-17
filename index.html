@@ -5,13 +5,44 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-3.4.1.js"></script>
     <script src="js/scripts.js"></script>
-    <title>Document Title</title>
+    <title>Friday Project: jQuery</title>
   </head>
   <body>
     <div class="container">
-      <h1>Heading</h1>
-      <form id="calculator"></form>
-      <div id="output"></div>
+
+      <div class="heading">
+        <h1>Which programming language should you learn?</h1>
+        <p class="lead"><em>Insert a description of this quiz game here.</em> Make it somewhat funny, relatable, and self-depracating, in the manner that Buzzfeed perfected. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. </p>
+        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
+      </div>
+
+      <div class="form">
+
+        <h2>Take the quiz</h2>
+        <p class="lead">Here are some obvious directions for how to take an online quiz. Be sure to fill out <strong>all</strong> of the questions!</p>
+        
+        <div class="">
+          <form id="quiz" class="form-horizontal">
+            <div class="form-group">
+              <label for="exampleInput">Example Label</label>
+              <input type="text" id="exampleInput">
+            </div>
+            <button type="submit" class="btn btn-danger">Get sorted.</button>
+          </form>
+        </div>
+
+      </div>
+
+      <div id="output" class="panel panel-default">
+        <div class="panel-heading">
+          <h2 class="panel-title">Your Results:</h2>
+        </div>
+        <div class="panel-body">
+          <p id="resultTitle" class="lead"></p>
+          <p id="userResults">We don't know, until you submit your quiz</p>
+        </div>
+      </div>
+
     </div>
   </body>
 </html>
