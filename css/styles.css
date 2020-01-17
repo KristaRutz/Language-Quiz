@@ -1,3 +1,7 @@
-p {
+.heading .lead {
   text-align: justify;
+}
+
+#resultMessage {
+  display: none;
 }
