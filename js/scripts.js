@@ -6,7 +6,7 @@ $(document).ready(function(){
     console.log(username);
     
     console.log($("input:radio[name=hogwarts]:checked").val());
-    console.log($("input:radio[name=describesYou]:checked").val());
+    console.log($("input:radio[name=codingGoals]:checked").val());
 
 
     $("#resultMessage").show();
