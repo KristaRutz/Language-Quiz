@@ -11,7 +11,7 @@ function increasePoints(counter, increase){
   } else if (counter==="python") {
     pythonCount = pythonCount + increase;
   } else {
-    pythonCount = pythonCount + increase;
+    javaScriptCount = javaScriptCount + increase;
   } 
 }
 
@@ -49,11 +49,14 @@ $(document).ready(function(){
 
     if (hogwarts && codingGoals && giphy && personality && tvShow) {
 
+      window.location = "#jumpToResults";
+
       rubyCount = 0;
       pythonCount = 0;
       javaCount = 0;
       javaScriptCount = 0;
       var highScore;
+      var outputMessage;
 
       increasePoints(hogwarts, 1);
       increasePoints(codingGoals, 3);
@@ -66,20 +69,25 @@ $(document).ready(function(){
         increasePoints("java", 2);
       }
 
-     if (Math.max(javaScriptCount, javaCount, rubyCount, pythonCount) === javaScriptCount){
-       highScore = "JavaScript";
+      console.log(javaScriptCount, javaCount, rubyCount, pythonCount);
+
+      if (Math.max(javaScriptCount, javaCount, rubyCount, pythonCount) === javaScriptCount){
+        highScore = "JavaScript";
+        outputMessage = "It seems as though the consistent usefulness and flexibility of a web-based language is right up your alley. While this language can play well with others, it also can be great for the independent-minded coder."
       } else if (Math.max(javaScriptCount, javaCount, rubyCount, pythonCount) === pythonCount){
-       highScore = "Python";
+        highScore = "Python";
+        outputMessage = "If you aren't committed to one specific type of programming, but want a language that is easy to use, helpful, and has a range of applications, this will be a good fit."
       } else if (Math.max(javaScriptCount, javaCount, rubyCount, pythonCount) === javaCount){
-      highScore = "Java";
+        highScore = "either Java or C#";
+        outputMessage = "As a compiled languages rather than interpreted ones, following the established syntax will be key to your success using Java or C#, but we know you won't let that stop you. You understand that the guidelines create efficiency and help you make complex programs more fluidly.";
       } else {
-      highScore = "Ruby";
+        highScore = "Ruby";
+        outputMessage = "The creator of Ruby actually designed it to make his life simpler and keep himself happy. Though he said it might not be the perfect language for everyone, we think it may be a pretty good fit for you precisely because you're not everyone -- you're unique and have your own 'right' way of doing things.";
       }
 
       $("#results").prepend(`<p id="resultTitle" class="lead">${highScore}</p>`);
-      $("#results").append(`<p id="resultMessage">Okay, ${username}, here's what our highly scientific quiz found. You scored the highest for ${highScore}, which means that ${highScore} is probably the language that is best suited for your learning goals!</p>`);
+      $("#results").append(`<p id="resultMessage">Okay, ${username}, here's what our highly scientific quiz found. You scored the highest for ${highScore}, which means that ${highScore} is probably the language that is best suited for your learning goals! ${outputMessage}</p>`);
 
-      window.location = "#jumpToResults";
       $("#output").show();
 
     } else {
