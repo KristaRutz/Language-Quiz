@@ -1,34 +1,74 @@
 $(document).ready(function(){
   $("form").submit(function(event) {
+    
     event.preventDefault();
 
-    var allFormsFilled = true;
+    $("#hogwarts").removeClass("has-error");
+    $("#codingGoals").removeClass("has-error");
+    $("#giphy").removeClass("has-error");
+    $("#personality").removeClass("has-error");
+    $("#tvShow").removeClass("has-error");
+    $("#hogwarts").removeClass("has-success");
+    $("#codingGoals").removeClass("has-success");
+    $("#giphy").removeClass("has-success");
+    $("#personality").removeClass("has-success");
+    $("#tvShow").removeClass("has-success");
 
     var username = $("#username").val();
     var hogwarts = $("input:radio[name=hogwarts]:checked").val();
     var codingGoals = $("input:radio[name=codingGoals]:checked").val();
     var giphy = $("input:radio[name=giphy]:checked").val();
     var personality = $("input:radio[name=personality]:checked").val();
+    var tvShow = $("input:radio[name=tvShow]:checked").val();
 
-    console.log(username, hogwarts, codingGoals, giphy, personality);
+    console.log(username, hogwarts, codingGoals, giphy, personality, tvShow);
 
     if (!username) {
-      console.log("Username is empty!")
-      username = "User"
+      console.log("Username is empty!");
+      username = "User";
     }
 
-    if (allFormsFilled) {
+    if (hogwarts && codingGoals && giphy && personality && tvShow) {
+
       window.location = "#jumpToResults";
+      $("#output").show();
+
     } else {
       window.location = "#jumpToQuizStart";
+
+      // test each form field for input
+      if (hogwarts) {
+        $("#hogwarts").addClass("has-success");
+      } else {
+        $("#hogwarts").addClass("has-error");
+      }
+
+      if (giphy) {
+        $("#giphy").addClass("has-success");
+      } else {
+        $("#giphy").addClass("has-error");
+      }
+
+      if (codingGoals) {
+        $("#codingGoals").addClass("has-success");
+      } else {
+        $("#codingGoals").addClass("has-error");
+      }
+
+      if (personality) {
+        $("#personality").addClass("has-success");
+      } else {
+        $("#personality").addClass("has-error");
+      }
+
+      if (tvShow) {
+        $("#tvShow").addClass("has-success");
+      } else {
+        $("#tvShow").addClass("has-error");
+      }
+
     }
 
-
     
-
-
-
-    $("#output").show();
-
   })
 });
