@@ -1,46 +1,52 @@
 # Programming Language Suggester
-Create an application for people interested in coding to decide which language they should learn first. Keep in mind that even though all languages have similarities and switching between languages and platforms is very common in both internships and jobs, applicants should still put some thought into which language they should learn.
+#### _A quiz to match coding language and personality, updated Jan 17, 2020_
 
-Choose at least three languages that prospective learners should consider. Here are some possibilities:
+#### By _**Krista Rutz**_
 
-Ruby
-C#
-JavaScript
-Go
-Python
-Rust
-Swift
-Feel free to pick any language that interests you, either from this list or from your own research.
+## Description
 
-Then create a Programming Language Suggester webpage (using HTML, CSS, JavaScript and jQuery) that asks future students a series of questions about themselves and provides a language suggestion based on their answers. You can ask questions about the languages themselves, the kinds of environments where these languages are used, or anything else you find relevant. Note that you are not required to research the languages extensively and you can even choose silly or irrelevant questions to determine which language would be best - for instance, people that like singing in the rain may prefer Ruby while chihuahua lovers might prefer C#.
+This project is an application for people interested in coding to decide which language they should learn first. Though all languages have similarities and switching between languages and platforms is very common in both internships and jobs, differences in personality may imply success in one language or another.
 
-Include a minimum of 5 survey questions.
-Offer a minimum of 3 different language suggestions.
-Don't forget regular Git commits and a detailed README. Commit messages should always be on-topic and professional in tone.
-Note: You are not required to take every possible combination of answers into account. Feel free to use very simple logic, or even ignore the user's responses for some questions as long as you show some good functionality and offer a minimum of 3 languages. It is also not required to publish your project to GitHub pages, but you may do so if you wish.
+This quiz determines which of these languages a user is best-suited to learn:
+* Ruby
+* C# or Java
+* JavaScript
+* Python
 
-## Objectives
-Your code will be reviewed for the following objectives:
+My Programming Language Suggester webpage (using HTML, CSS, JavaScript and jQuery) asks future students a series of questions about themselves and provides a language suggestion based on their answers. It includes a survey with five questions.
 
-All previous standards (last week's objectives) are in place (see below).
-Site uses branching to return the result.
-jQuery is used to show and hide the result after questions are answered and submitted. (Tip: test your app several times with different answers.)
-Form gathers input from the user.
-Variable names are descriptive of what they represent.
-Web page is styled using Bootstrap and custom CSS.
-The project is in a presentable, portfolio-quality state.
-Required functionality is in place by the Friday deadline.
-Project demonstrates understanding of concepts covered this week. If prompted, you are able to discuss your code with an instructor using correct terminology.
+## Installation/How to Use
 
+To take this survey, use this [link](https://kristarutz.github.io/Language-Quiz/).
 
-## Previous Objectives
-For reference, here are last week's objectives:
+You can also download the ZIP file to run this program without internet.
+* Select "Clone or Download" on the [GitHub Repository](https://github.com/KristaRutz/Language-Quiz) site > Download ZIP
+* Open the ZIP download and extract files.
+* The new folder will be created as "Language Quiz" unless you change this setting. In this folder, select the index.html document.
+* Choose "Open With" > Google Chrome.
+* The website is now ready to use!
 
-Code is clean, well-refactored, and easy-to-read. This includes correct indendation, spacing, and including only necessary comments and debugging tools.
-Commits are made regularly with clear messages that finish the phrase "It will…".
-Project README that includes, bare minimum:
-author name
-program name
-detailed setup instructions
-description
-copyright and license information
+## Known Bugs
+
+No known bugs. Some links are currently disabled while the website is in beta.
+
+## Support and contact details
+
+Please contact me if you run into any issues or have questions, ideas or concerns.  I can be contacted at <krista.rutz@pomona.edu>. _Contributions to the code are encouraged!_
+
+## Technologies Used
+
+* HTML, CSS, and JS
+* Responsive design using Bootstrap framework
+
+### License
+
+*This software is licensed under the MIT license*
+
+Copyright (c) 2020 **_Krista Rutz_**
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
