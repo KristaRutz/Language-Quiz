@@ -6,10 +6,28 @@
   display: none;
 }
 
-#footer {
+#footer, #output, .heading {
   margin: 100px 0px 50px 0px;
 }
 
 iframe {
   width 50%;
+}
+
+.form-panel h2, #output .lead {
+  background-color: #d9534f;
+  border-color: #d43f3a;
+  color: white;
+  border-radius: 4px;
+  padding: 12px;
+}
+
+h1 {
+  color: #fff;
+  background-color: #f0ad4e;
+  border-color: #eea236;
+  border-radius: 4px;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 30px;
 }

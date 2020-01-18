@@ -92,6 +92,7 @@ $(document).ready(function(){
 
     } else {
       window.location = "#jumpToQuizStart";
+      
       // test each form field for input
       if (hogwarts) {
         $("#hogwarts").addClass("has-success");
