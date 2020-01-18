@@ -36,8 +36,9 @@ Please contact me if you run into any issues or have questions, ideas or concern
 
 ## Technologies Used
 
-* HTML, CSS, and JS
-* Responsive design using Bootstrap framework
+* JavaScript and jQuery
+* Custom CSS and responsive design using Bootstrap framework
+* HTML
 
 ### License
 
