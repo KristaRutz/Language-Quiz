@@ -16,6 +16,7 @@ function increasePoints(counter, increase){
 }
 
 $(document).ready(function(){
+
   $("form").submit(function(event) {
     
     event.preventDefault();
@@ -88,7 +89,7 @@ $(document).ready(function(){
       $("#results").prepend(`<p id="resultTitle" class="lead">${highScore}</p>`);
       $("#results").append(`<p id="resultMessage">Okay, ${username}, here's what our highly scientific quiz found. You scored the highest for ${highScore}, which means that ${highScore} is probably the language that is best suited for your learning goals! ${outputMessage}</p>`);
 
-      $("#output").show();
+      $("#output").fadeIn();
 
     } else {
       window.location = "#jumpToQuizStart";
