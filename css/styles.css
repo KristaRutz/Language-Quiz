@@ -11,7 +11,7 @@
 }
 
 iframe {
-  width 50%;
+  width: 100%;
 }
 
 .form-panel h2, #output .lead {

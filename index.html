@@ -17,7 +17,6 @@
       </div>
 
       <div class="form-panel">
-        <a name="jumpToQuizStart"></a>
         <h2>Take the quiz</h2>
         <p class="lead">Use the bubbles to select the option that feels the most like you. <strong>Be sure to fill out ALL FIELDS</strong> or we will not have enough information to give you a thorough answer!</p>
         <div class="form well">
@@ -158,7 +157,11 @@
 
             <div class="form-group">
               <div class="col-sm-offset-2 col-sm-10">
-                <button type="submit" class="btn btn-danger">Get sorted.</button>
+                <button type="submit" class="btn btn-success">Get sorted.</button>
+                <button id="retake" type="reset" class="btn btn-danger">Retake the Quiz</button>
+                <a href="https://www.learneroo.com/modules/12/nodes/94" target="_blank">
+                  <button type="button" class="btn btn-warning">Learn more about choosing a programming language</button>
+                </a>
               </div>
             </div>
 
@@ -168,7 +171,6 @@
 
       <div id="output" class="panel panel-default">
         <div class="panel-heading">
-          <a name="jumpToResults"></a>
           <h2 class="panel-title">Your Results:</h2>
         </div>
         <div id="results" class="panel-body">
@@ -176,12 +178,7 @@
       </div>
 
       <div id="footer" class="btn-group">
-        <a href="https://www.learneroo.com/modules/12/nodes/94" target="_blank">
-          <button type="button" class="btn btn-warning">Learn more about choosing a programming language</button>
-        </a>
-        <a href="#jumpToQuizStart">
-          <button type="button" class="btn btn-danger">Retake the Quiz</button>
-        </a>
+
       </div>
 
     </div>

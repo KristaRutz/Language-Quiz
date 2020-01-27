@@ -17,7 +17,11 @@ function increasePoints(counter, increase){
 
 $(document).ready(function(){
 
-  $("form").submit(function(event) {
+  $("#retake").click(function() {
+    $("#output").fadeOut();
+  })
+
+  $("#quiz").submit(function(event) {
     
     event.preventDefault();
 
@@ -41,16 +45,11 @@ $(document).ready(function(){
     var personality = $("input:radio[name=personality]:checked").val();
     var tvShow = $("input:radio[name=tvShow]:checked").val();
 
-    console.log(username, hogwarts, codingGoals, giphy, personality, tvShow);
-
     if (!username) {
-      console.log("Username is empty!");
       username = "User";
     }
 
     if (hogwarts && codingGoals && giphy && personality && tvShow) {
-
-      window.location = "#jumpToResults";
 
       rubyCount = 0;
       pythonCount = 0;
@@ -69,8 +68,6 @@ $(document).ready(function(){
       } else {
         increasePoints("java", 2);
       }
-
-      console.log(javaScriptCount, javaCount, rubyCount, pythonCount);
 
       if (Math.max(javaScriptCount, javaCount, rubyCount, pythonCount) === javaScriptCount){
         highScore = "JavaScript";
@@ -92,7 +89,6 @@ $(document).ready(function(){
       $("#output").fadeIn();
 
     } else {
-      window.location = "#jumpToQuizStart";
       
       // test each form field for input
       if (hogwarts) {
