@@ -1,5 +1,5 @@
 # Programming Language Suggester
-#### _A quiz to match coding language and personality, updated Jan 17, 2020_
+#### _A quiz to match coding language and personality, updated Jan 26, 2020_
 
 #### By _**Krista Rutz**_
 
